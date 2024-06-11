@@ -1,0 +1,88 @@
+/* ABOUT-START */
+.about-title {
+    font-weight: 700;
+}
+
+#about {
+    margin-top: 30px;
+}
+
+.team .member {
+    position: relative;
+    padding: 30px;
+    box-shadow: 0px 1px 5px rgb(61, 61, 61);
+    border-radius: 10px;
+    background:#EFEEE5;
+}
+
+.team .member .teampic {
+    overflow: hidden;
+    width: 250px;
+    border-radius: 50%;
+}
+
+.team .member .member-info {
+    padding-left: 30px;
+}
+
+.team .member h4 {
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: black;
+}
+
+.team .member span {
+    display: block;
+    font-size: 15px;
+    padding-bottom: 10px;
+    position: relative;
+    font-weight: 500;
+}
+
+.team .member span::after {
+    content: "";
+    position: absolute;
+    display: block ;
+    width: 50px;
+    height: 2px;
+    background: black;
+    bottom: 0;
+    left: 0;
+}
+
+.team .member p {
+    margin: 10px 0 0 0;
+    font-size: 14px;
+}
+
+section {
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+.section-title {
+    margin-top: 50px;
+    text-align: center;
+    padding-bottom: 30px;
+    justify-content: center;
+}
+
+.underline {
+    position: relative;
+    top: 50px;
+    width: 256px;
+    height: 1px;
+    background: black;
+    margin: 0 auto;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color:rgb(6, 68, 57);
+}
+/* ABOUT-END */

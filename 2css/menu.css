@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Space Mono", monospace;
+    font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    width: 100%;
+}
+
+/* MENU */
+
+.menu {
+    background-color: #064439;
+    width: 100%;
+}
+
+.menu .menu-header {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-header h3 {
+    color: hwb(47 81% 7%);
+    padding: 10px 30px;
+}
+
+.menu .menu-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 50px 0;
+    flex-wrap: wrap;
+    background: linear-gradient(rgba(82, 42, 4, 0.6), rgba(0, 0, 0, 0.5));;
+}
+
+.menu .menu-content .hot-coffees,
+.cold-coffees,
+.frappucino-coffees {
+    width: 250px;
+}
+.card-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.menu .menu-content .hot-coffees .hot-coffees-image img {
+    border-radius: 50%;
+}
+
+.menu .menu-content .cold-coffees .cold-coffees-image img {
+    border-radius: 50%;
+}
+
+.menu .menu-content .frappucino-coffees .frappucino-coffees-image img {
+    border-radius: 50%;
+}
+
+.menu .menu-content .hot-coffees-body,
+.cold-coffees-body,
+.frappucino-coffees-body {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.menu .menu-content .hot-coffees-body h2,
+.cold-coffees-body h2,
+.frappucino-coffees-body h2 {
+    color: orange;
+    font-weight: 700;
+}
+
+.menu .menu-content .hot-coffees-body label,
+.cold-coffees-body label,
+.frappucino-coffees-body label {
+    margin-top: 10px;
+    color: white;
+}
+
+/* SHOP */
+.shop {
+    background-color: rgb(6, 68, 57);
+    width: 100%;
+}
+
+.shop-header {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.shop-header h3 {
+    color: #eee7ce;
+    padding: 10px 30px;
+}
+
+.shop-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(238, 231, 206);
+    padding: 50px 0;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 280px;
+    margin: 20px;
+}
+
+.card-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+}
+
+.card-image img {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .4s ease-in-out;
+}
+
+.card-image img:hover {
+    transform: scale(1.1);
+}
+
+.card-body {
+    padding: 20px;
+    color: rgb(6, 68, 57);
+    border-radius: 20px;
+    border: 3px solid rgb(10, 109, 91);
+    text-align: center;
+    font-size: 25px;
+}
+
+.card-body h3 {
+    padding: 10px 0;
+    font-size: large;
+}
+
+.card-body i {
+    color: orange;
+    font-size: 10px;
+    position: relative;
+    bottom: 5px;
+    margin: 0 2px;
+}
+
+.hot-coffees-image,
+.cold-coffees-image,
+.frappucino-coffees-image {
+    transform: scale(0.8);
+    transition: transform 0.5s ease-in-out;
+}
+
+.hot-coffees-image:hover,
+.cold-coffees-image:hover,
+.frappucino-coffees-image:hover {
+    transform: scale(0.9);
+}
+
+@media (max-width: 800px) {
+    .menu .menu-content .hot-coffees, .cold-coffees, .frappucino-coffees {
+        margin: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .content h2 {
+        font-size: 23px;
+    }
+
+    .content p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 410px) {
+    .content h2 {
+        font-size: 20px;
+    }
+    
+    .content p {
+        font-size: 13px;
+    }
+}
