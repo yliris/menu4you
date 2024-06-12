@@ -30,6 +30,7 @@ body {
     opacity: 0;
     transition: all 700ms ease;
     pointer-events: none;
+    z-index: 9999;
 }
 
 .popup-overlay.active {
@@ -50,6 +51,7 @@ body {
     opacity: 1;
     pointer-events: none;
     transition: all 700ms ease;
+    z-index: 10000;
 }
 
 .popup-container,
