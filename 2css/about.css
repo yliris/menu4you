@@ -13,12 +13,22 @@
     box-shadow: 0px 1px 5px rgb(61, 61, 61);
     border-radius: 10px;
     background:#EFEEE5;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
 }
 
 .team .member .teampic {
     overflow: hidden;
-    width: 250px;
+    max-width: 100px;
+    height: 100px;
     border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    margin-right: 5px;
 }
 
 .team .member .member-info {
@@ -84,5 +94,38 @@ section {
     padding-bottom: 20px;
     position: relative;
     color:rgb(6, 68, 57);
+}
+
+.social-link {
+    color: rgb(6, 68, 57);
+    transition: color 0.2s ease-in-out;
+}
+
+.social-link:hover {
+    color: rgb(17, 154, 129);
+}
+
+@media (max-width: 517px) {
+    .member .member-info span {
+        font-size: smaller;
+    }
+}
+
+@media (max-width: 505px) {
+    .member .member-info h4 {
+        font-size: medium;
+    }
+}
+
+@media (max-width: 485px) {
+    .member .member-info span {
+        font-size: x-small;
+    }
+}
+
+@media (max-width: 375px) {
+    .member .member-info span {
+        font-size: xx-small;
+    }
 }
 /* ABOUT-END */
