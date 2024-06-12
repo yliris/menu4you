@@ -684,6 +684,66 @@ body.no-scroll {
         width: auto;
     }
 }
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 50%;
+    top: 50%;
+    padding-top: 15%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: opacity 0.5 ease;
+}
+
+.modal-content {
+    background-color: rgb(6, 68, 57);
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    transform: scale(0.7);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.modal-content p {
+    color: #eee7ce;
+}
+
+.modal.show {
+    display: block;
+    opacity: 1;
+}
+
+.modal-content.show {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.close {
+    color: rgb(238, 231, 206);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    transition: color 0.2s ease-in-out;
+}
+
+.close:hover,
+.close:focus {
+    color: rgb(187, 183, 166);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
 /* CONTACT-END */
 /* MAIN-END */
 
