@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,12 +12,11 @@
     <link rel="stylesheet" href="2css/style.css">
     <title>Menu4You | Menu</title>
 </head>
-
 <body>
     <!-- NAVIGATION-START -->
     <nav class="navbar navbar-header" id="home">
         <div class="container-fluid justify-content-center">
-            <span class="navbar mb-0 navbar-text">Open Monday-Friday, Pickup and Delivery (COD Applies)</span>
+            <span class="navbar mb-0 navbar-text">Open Monday-Saturday, Pickup and Delivery (COD Applies)</span>
         </div>
     </nav>
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: rgb(6, 68, 57);">
@@ -33,13 +31,12 @@
             <div class="offcanvas offcanvas-end sidebar" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header text-white border-bottom">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Logo</h5>
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu4You | Navigation</h5>
                     <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas"
                         aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
                     <ul class="navbar-nav justify-content-center align-items-center flex-grow-1 pe-3">
-
                         <li class="nav-item mx-2">
                             <a class="nav-link" aria-current="page" href="index.html">Home</a>
                         </li>
@@ -72,7 +69,7 @@
         <div class="menu-content">
             <div class="hot-coffees">
                 <div class="hot-coffees-image">
-                    <a href="#hot-and-cold"><img src="1images/menu/hot coffee/mocha-latte.png" alt=""></a>
+                    <a href="#hot"><img src="1images/menu/hot coffee/mocha-latte.png" alt=""></a>
                 </div>
                 <div class="hot-coffees-body">
                     <h2>Hot Coffees</h2>
@@ -83,7 +80,7 @@
             </div>
             <div class="cold-coffees">
                 <div class="cold-coffees-image">
-                    <a href="#hot-and-cold"><img src="1images/menu/iced coffee/salted-caramel.png" alt=""></a>
+                    <a href="#cold"><img src="1images/menu/iced coffee/salted-caramel.png" alt=""></a>
                 </div>
                 <div class="cold-coffees-body">
                     <h2>Cold Coffees</h2>
@@ -93,7 +90,7 @@
             </div>
             <div class="frappucino-coffees" id="#Frappe">
                 <div class="frappucino-coffees-image">
-                    <a href="#Frappe"><img src="1images/menu/frappe/java-chip-frappe.png" alt=""></a>
+                    <a href="#frappe"><img src="1images/menu/frappe/java-chip-frappe.png" alt=""></a>
                 </div>
                 <div class="frappucino-coffees-body">
                     <h2>Frappe</h2>
@@ -102,6 +99,7 @@
                 </div>
             </div>
         </div>
+        <div id="hot"></div>
     </div>
     <div class="shop" id="shop">
         <div class="shop-header">
@@ -141,8 +139,8 @@
                 </div>
             </div>
         </div>
+        <div id="cold"></div>
     </div>
-
     <div class="shop" id="shop">
         <div class="shop-header">
             <h3>Iced Coffee</h3>
@@ -246,7 +244,6 @@
             </div>
         </div>
     </div>
-
     <div class="shop" id="shop">
         <div class="shop-header">
             <h3>Non-Coffee</h3>
@@ -317,8 +314,8 @@
                 </div>
             </div>
         </div>
+        <div id="frappe"></div>
     </div>        
-
     <div class="shop" id="shop">
         <div class="shop-header">
             <h3>Frappe</h3>
@@ -390,7 +387,6 @@
             </div>
         </div>
     </div>
-
     <div class="shop" id="shop">
         <div class="shop-header">
             <h3>Croffles</h3>
@@ -494,7 +490,6 @@
             </div>
         </div>
     </div>
-
     <div class="shop" id="shop">
         <div class="shop-header">
             <h3>Add-ons</h3>
@@ -550,29 +545,102 @@
             </div>
         </div>
     </div>
-
     <!-- FOOTER-START -->
-    <footer class="footer py-3 mt-1">
-        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-            <li class="nav-item"><a href="https://www.facebook.com/" class="px-2 fs-3 mx-2">
-                    <i class='bx bxl-facebook footer-link'></i></a></li>
-            <li class="nav-item"><a href="https://www.instagram.com/" class="px-2 fs-3 mx-2">
-                    <i class='bx bxl-instagram-alt footer-link'></i></a></li>
-            <li class="nav-item"><a href="https://twitter.com/?lang=en" class="px-2 fs-3 mx-2">
-                    <i class='bx bxl-twitter footer-link'></i></a></li>
-            <li class="nav-item"><a href="https://www.tiktok.com/" class="px-2 fs-3 mx-2">
-                    <i class='bx bxl-tiktok footer-link'></i></a></li>
-            <li class="nav-item"><a href="https://www.youtube.com/" class="px-2 fs-3 mx-2">
-                    <i class='bx bxl-youtube footer-link'></i></a></li>
-        </ul>
-        <p class="footer-p mb-0 footer-text text-center" style="color: rgb(239, 238, 229);">
-            <a href="index.html" id="footer-brand-link">Menu4You</a> &copy; 2024 |
-            All rights reserved.
-        </p>
+    <!-- LOCATION-START -->
+    <footer class="footer py-3 footer-location">
+        <div class="text-center location-title">
+            <h1 class="pt-5">Our main branch!</h1>
+            <p>CvSU Avenue, Brgy Purok 1 Biga 1 Pathwalk, Silang, 4118 Cavite</p>
+        </div>
+        <div class="map-responsive">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3867.206624909989!2d120.97643427422692!3d14.241165585777305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd7e7d0744eafd%3A0xf25bff0f1b1deb7b!2sCavite%20State%20University%2C%20Silang%20Campus!5e0!3m2!1sen!2sph!4v1718166073159!5m2!1sen!2sph"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="text-center other-branch" style="color: rgb(238, 231, 206);">
+            <h2 class="pb-3"><strong>Other branches:</strong></h2>
+            <p><a href="https://maps.app.goo.gl/T9Q49mpuEE9yYUfWA" target="_blank"
+                    id="footer-branch-link"><strong>AMADEO:</strong></a> 5WFG+86F, Amadeo, 4119 Cavite</p>
+            <p><a href="https://maps.app.goo.gl/gN2nkZe2eRHuKhUJ6" target="_blank"
+                    id="footer-branch-link"><strong>CARMONA:</strong></a> Governor's Dr, Carmona, Cavite</p>
+        </div>
+    </footer>
+    <!-- LOCATION-END -->
+    <footer class="text-center text-lg-start" style="background-color: rgb(6, 68, 57);">
+        <div class="container-fluid p-4">
+            <div class="row mt-4">
+                <div class="col-lg-4 col-md-12 mb-4 mb-md-0 footer-about">
+                    <h5 class="text-uppercase mb-4"><strong>About Menu4You</strong></h5>
+                    <p>
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                        voluptatum deleniti atque corrupti.
+                    </p>
+                    <p>
+                        Blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas
+                        molestias.
+                    </p>
+                    <div class="my-4 footer-links">
+                        <a type="button" class="btn btn-floating btn-light btn-lg footer-btn"
+                            href="https://www.facebook.com/" target="_blank">
+                            <i class='bx bxl-facebook-circle'></i></a>
+                        <a type="button" class="btn btn-floating btn-light btn-lg footer-btn"
+                            href="https://www.instagram.com/" target="_blank">
+                            <i class='bx bxl-instagram-alt'></i></a>
+                        <a type="button" class="btn btn-floating btn-light btn-lg footer-btn"
+                            href="https://twitter.com/?lang=en" target="_blank">
+                            <i class='bx bxl-twitter'></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0 footer-info" style="color: rgb(238, 231, 206);">
+                    <ul class="fa-ul" style="margin-left: 1.65em;">
+                        <li class="mb-3">
+                            <p class="fa-li"><i class='bx bxs-home-heart fs-4'></i></p>
+                            <span class="ms-2 footer-link-info">
+                                <a href="https://maps.app.goo.gl/KD76rfAee4sXqewq7" target="_blank">Biga 1, Silang,
+                                    Cavite</a>
+                            </span>
+                        </li>
+                        <li class="mb-3">
+                            <p class="fa-li"><i class='bx bxs-envelope fs-4'></i></p>
+                            <span class="ms-2 footer-link-info">
+                                <a href="https://mail.google.com/mail/u/0/" target="_blank">menu4you@example.com</a>
+                            </span>
+                        </li>
+                        <li class="mb-3">
+                            <p class="fa-li"><i class='bx bxs-phone fs-4'></i></p>
+                            <span class="ms-2">
+                                0912-345-6789
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0 footer-sched">
+                    <h5 class="text-uppercase mb-4"><strong>Opening hours</strong></h5>
+                    <table class="table text-center footer-sched-table">
+                        <tbody class="fw-normal">
+                            <tr>
+                                <td id="footer-table-day">Mon - Wed:</td>
+                                <td>8:00 AM - 7:00 PM</td>
+                            </tr>
+                            <tr>
+                                <td id="footer-table-day">Thu - Fri:</td>
+                                <td>11:00 AM - 8:00 PM</td>
+                            </tr>
+                            <tr>
+                                <td id="footer-table-day">Saturday:</td>
+                                <td>7:00 AM - 8:00 PM</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-3" style="background-color: rgb(4, 51, 43); color: rgb(238, 231, 206);">
+            <a id="footer-brand-link" href="index.html">Menu4You</a>
+            &copy; 2024 | All rights reserved.
+        </div>
     </footer>
     <!-- FOOTER-END -->
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
