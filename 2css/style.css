@@ -137,10 +137,9 @@ body {
 body.no-scroll {
     overflow: hidden;
 }
-
 /* AD-END */
 
-/* NAVBAR-START */
+/* NAVIGATION-START */
 .navbar-header,
 .navbar-text {
     font-weight: 700;
@@ -283,8 +282,7 @@ body.no-scroll {
         visibility: visible;
     }
 }
-
-/* NAVBAR-END */
+/* NAVIGATION-END */
 
 /* MAIN-START */
 /* HISTORY-START */
@@ -466,7 +464,6 @@ body.no-scroll {
     color: #064439;
     background-color: rgb(238, 231, 206);
 }
-
 /* MENU-END */
 
 /* FEEDBACK-START */
@@ -611,7 +608,6 @@ body.no-scroll {
     color: #91a737;
     margin-top: 20px;
 }
-
 /* FEEDBACK-END */
 
 /* CONTACT-START */
@@ -689,19 +685,25 @@ body.no-scroll {
     }
 }
 /* CONTACT-END */
+/* MAIN-END */
 
 /* LOCATION-START */
-.location-shit {
-    padding-bottom: -100%;
+.footer-location {
+    color: rgb(238, 231, 206);
+    background-color: rgb(6, 68, 57);
 }
 
-.location-title h1 {
+.location-title h1{
     font-weight: 700;
+}
+
+.location-title p {
+    color: rgb(238, 231, 206);
 }
 
 .map-responsive {
     overflow: hidden;
-    padding-bottom: 60%;
+    padding-bottom: 40%;
     position: relative;
     height: 0;
 }
@@ -709,44 +711,67 @@ body.no-scroll {
 .map-responsive iframe {
     left: 50%;
     top: 0;
-    height: 70%;
+    height: 90%;
     width: 70%;
     position: absolute;
     border: 4px solid rgb(6, 68, 57);
-    box-shadow: 0px 20px 25px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.1);
     border-radius: 30px;
     transform: translateX(-50%);
 }
-/* LOCATION-END */
-/* MAIN-END */
 
-/* FOOTER-START */
-.footer {
-    background-color: rgb(6, 68, 57);
-}
-
-.footer-link {
-    color: rgb(239, 238, 229);
-    display: inline-block;
-    transition: transform 0.3s ease-in-out;
-}
-
-.footer-link:hover {
-    transform: scale(1.1);
-}
-
-@media (max-width: 992px) {
-    .footer-p {
-        font-size: small;
-    }
-}
-
-#footer-brand-link {
-    color: rgb(239, 238, 229);
+#footer-branch-link {
+    color: rgb(238, 231, 206);
     text-decoration: none;
 }
 
-#footer-brand-link:hover {
-    color: rgb(186, 186, 186);
+#footer-branch-link:hover {
+    color: rgb(187, 183, 166);
+}
+/* LOCATION-END */
+
+/* FOOTER-START */
+.footer-about {
+    color: rgb(238, 231, 206);
+}
+
+.footer-btn {
+    color: rgb(6, 68, 57);
+    background-color: rgb(238, 231, 206);
+}
+
+.footer-btn:hover {
+    background-color: rgb(187, 183, 166);
+}
+
+.footer-link-info a {
+    color: rgb(238, 231, 206);
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.footer-link-info a:hover {
+    color: rgb(187, 183, 166);
+}
+
+.footer-sched h5 {
+    color: rgb(238, 231, 206);
+}
+
+.footer-sched-table tbody tr td{
+    color: rgb(6, 68, 57);
+    font-weight: 700;
+    border: 3px solid rgb(4, 42, 35);
+    background-color: rgb(238, 231, 206);
+}
+
+#footer-brand-link{
+    color: rgb(238, 231, 206);
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+#footer-brand-link:hover{
+    color: rgb(187, 183, 166);
 }
 /* FOOTER-END */
