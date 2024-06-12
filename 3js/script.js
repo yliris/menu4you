@@ -70,3 +70,43 @@ const startTimer = () => {
 if (!document.cookie.match(/^(.*;)?\s*popupCookie\s*=\s*[^;]+(.*)?$/)) {
   window.addEventListener("scroll", startTimer);
 }
+
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+  event.preventDefault();
+  const modal = document.getElementById('successModal');
+  const modalContent = modal.querySelector('.modal-content');
+  modal.style.display = 'block';
+  document.body.classList.add('no-scroll');
+
+  modal.offsetHeight;
+  modal.classList.add('show');
+  modalContent.classList.add('show');
+
+  this.reset();
+});
+
+document.querySelector('.modal .close').addEventListener('click', function() {
+  const modal = document.getElementById('successModal');
+  const modalContent = modal.querySelector('.modal-content');
+  modalContent.classList.remove('show');
+
+  modal.addEventListener('transitionend', function() {
+    modal.classList.remove('show');
+    modal.style.display = 'none';
+    document.body.classList.remove('no-scroll');
+  }, { once: true });
+});
+
+window.onclick = function(event) {
+  const modal = document.getElementById('successModal');
+  if (event.target == modal) {
+    const modalContent = modal.querySelector('.modal-content');
+    modalContent.classList.remove('show');
+
+    modal.addEventListener('transitionend', function() {
+      modal.classList.remove('show');
+      modal.style.display = 'none';
+      document.body.classList.remove('no-scroll');
+    }, { once: true });
+  }
+}
